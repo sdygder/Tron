@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Send Tron</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Send UI</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
 
-  <label>Address or Domain Name</label>
+  <!-- Address -->
+  <label class="label">Address or Domain Name</label>
   <div class="input-box">
-    <input value="TKDxyv1d1krLSfynn3jQrY" readonly>
-    <div class="actions">
-      <span class="accent">Paste</span>
-      <svg viewBox="0 0 24 24">
-        <circle cx="12" cy="7" r="4"/>
-        <path d="M5.5 21a6.5 6.5 0 0 1 13 0"/>
-      </svg>
-      <svg viewBox="0 0 24 24">
-        <path d="M4 7V4h3"/>
-        <path d="M17 4h3v3"/>
-        <path d="M20 17v3h-3"/>
-        <path d="M7 20H4v-3"/>
-      </svg>
+    <input type="text" value="TKDxyv1d1krLSfynn3jQrY">
+    <div class="right-icons">
+      <span class="text-btn">Paste</span>
+
+      <!-- User icon -->
+      <span class="icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z"/>
+        </svg>
+      </span>
+
+      <!-- Scan icon -->
+      <span class="icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M3 7V3h4M21 7V3h-4M3 17v4h4M21 17v4h-4" fill="none" stroke-width="2"/>
+        </svg>
+      </span>
     </div>
   </div>
 
-  <label class="mt">Amount</label>
+  <!-- Amount -->
+  <label class="label">Amount</label>
   <div class="input-box">
-    <input id="amount" placeholder="Amount" inputmode="decimal">
-    <span class="unit">USDT</span>
-    <span class="accent">Max</span>
+    <input type="text" placeholder="Amount">
+    <div class="right-icons">
+      <span class="muted">USDT</span>
+      <span class="text-btn">Max</span>
+    </div>
   </div>
 
-  <div class="value">= $<span id="usd">0.00</span></div>
+  <div class="rate">= $</div>
 
-  <label class="mt">Memo</label>
+  <!-- Memo -->
+  <label class="label">Memo</label>
   <div class="input-box">
-    <input>
-    <div class="actions">
-      <svg viewBox="0 0 24 24">
-        <path d="M4 7V4h3"/>
-        <path d="M17 4h3v3"/>
-        <path d="M20 17v3h-3"/>
-        <path d="M7 20H4v-3"/>
-      </svg>
-      <svg viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="10"/>
-        <line x1="12" y1="8" x2="12" y2="12"/>
-        <circle cx="12" cy="16" r="1"/>
-      </svg>
+    <input type="text">
+    <div class="right-icons">
+
+      <!-- Scan icon -->
+      <span class="icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M3 7V3h4M21 7V3h-4M3 17v4h4M21 17v4h-4" fill="none" stroke-width="2"/>
+        </svg>
+      </span>
+
+      <!-- Info icon -->
+      <span class="icon alert">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 6a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 12 8Zm1.5 9h-3v-2h1v-3h-1V10h3v5h1Z"/>
+        </svg>
+      </span>
+
     </div>
   </div>
 
 </div>
 
-<button class="next">Next</button>
-
-<script>
-const amount = document.getElementById("amount");
-const usd = document.getElementById("usd");
-
-amount.addEventListener("input", () => {
-  const v = parseFloat(amount.value);
-  usd.textContent = !isNaN(v) ? v.toFixed(2) : "0.00";
-});
-</script>
+<button class="next-btn">Next</button>
 
 </body>
 </html>
