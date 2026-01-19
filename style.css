@@ -124,6 +124,16 @@ label {
   stroke: none !important;
 }
 
+.back-icon {
+  width: 22px;
+  height: 22px;
+  stroke: #ffffff;
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .info {
   width: 20px;
   height: 20px;
