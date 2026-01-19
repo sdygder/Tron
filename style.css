@@ -31,6 +31,7 @@ label{
   background:#1a1a1a;
   border:1px solid #2a2a2a;
   border-radius:12px;
+  overflow:hidden
 }
 
 .input-box:focus-within{
@@ -45,7 +46,8 @@ label{
   outline:none;
   color:#fff;
   font-size:16px;
-  padding:0 110px 0 14px
+  padding-left:14px;
+  padding-right:120px
 }
 
 .input-box input::placeholder{
@@ -59,7 +61,8 @@ label{
   transform:translateY(-50%);
   display:flex;
   align-items:center;
-  gap:10px
+  gap:10px;
+  max-width:96px
 }
 
 .accent,
@@ -93,16 +96,18 @@ label{
 }
 
 .tron-logo{
-  width:18px;
-  height:18px;
+  width:16px;
+  height:16px;
+  display:block;
   flex-shrink:0
 }
 
-.tron-logo path{
-  fill:none;
-  stroke:#ffffff;
-  stroke-width:14;
-  stroke-linejoin:round
+.tron-logo,
+.tron-logo *{
+  fill:unset !important;
+  stroke:none !important;
+  opacity:1 !important;
+  filter:none !important
 }
 
 .amount-block{
@@ -118,7 +123,7 @@ label{
   height:20px;
   border-radius:50%;
   background:#1aff7c;
-  color:#000;
+  color:#0b1f14;
   display:flex;
   align-items:center;
   justify-content:center;
