@@ -25,15 +25,12 @@ label{
 }
 
 .input-box{
-  position: relative;
+  position:relative;
+  width:100%;
   height:52px;
   background:#1a1a1a;
   border:1px solid #2a2a2a;
   border-radius:12px;
-  padding:0 14px;
-  display:flex;
-  align-items:center;
-  gap:10px
 }
 
 .input-box:focus-within{
@@ -41,12 +38,14 @@ label{
 }
 
 .input-box input{
-  flex:1;
+  width:100%;
+  height:100%;
   background:transparent;
   border:none;
   outline:none;
   color:#fff;
-  font-size:16px
+  font-size:16px;
+  padding:0 110px 0 14px
 }
 
 .input-box input::placeholder{
@@ -54,6 +53,10 @@ label{
 }
 
 .right{
+  position:absolute;
+  right:14px;
+  top:50%;
+  transform:translateY(-50%);
   display:flex;
   align-items:center;
   gap:10px
@@ -63,7 +66,8 @@ label{
 .max{
   color:#1aff7c;
   font-size:15px;
-  font-weight:600
+  font-weight:600;
+  white-space:nowrap
 }
 
 .right svg{
@@ -88,11 +92,12 @@ label{
   font-size:15px
 }
 
-/* FIXED TRON LOGO */
 .tron-logo{
   width:18px;
-  height:18px
+  height:18px;
+  flex-shrink:0
 }
+
 .tron-logo path{
   fill:none;
   stroke:#ffffff;
@@ -100,10 +105,10 @@ label{
   stroke-linejoin:round
 }
 
-/* MORE SPACE LIKE TRUST WALLET */
 .amount-block{
   margin-bottom:36px
 }
+
 .memo-block{
   margin-top:36px
 }
