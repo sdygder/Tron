@@ -6,10 +6,10 @@
 body{
   margin:0;
   min-height:100vh;
-  color:#fff;
   background:
     radial-gradient(120% 80% at 50% 0%,#1c1c1c 0%,transparent 60%),
-    linear-gradient(180deg,#141414 0%,#101010 45%,#0c0c0c 100%)
+    linear-gradient(180deg,#141414 0%,#101010 45%,#0c0c0c 100%);
+  color:#fff
 }
 
 .page{
@@ -18,10 +18,14 @@ body{
 
 label{
   display:block;
-  margin-top:20px;
+  margin-top:22px;
   margin-bottom:8px;
   font-size:14px;
   color:#8f8f8f
+}
+
+.memo-label{
+  margin-top:34px
 }
 
 .input-box{
@@ -45,7 +49,7 @@ label{
   outline:none;
   color:#fff;
   font-size:16px;
-  padding:0 118px 0 16px
+  padding:0 130px 0 16px
 }
 
 .input-box input::placeholder{
@@ -60,7 +64,7 @@ label{
   display:flex;
   align-items:center;
   gap:12px;
-  pointer-events:none
+  max-width:120px
 }
 
 .accent,
@@ -78,42 +82,25 @@ label{
   fill:none;
   stroke-width:2;
   stroke-linecap:round;
-  stroke-linejoin:round
+  stroke-linejoin:round;
+  flex-shrink:0
 }
 
 .network-pill{
   margin-top:10px;
-  height:36px;
-  padding:0 14px;
-  background:#1b1b1b;
-  border-radius:999px;
   display:inline-flex;
   align-items:center;
   gap:8px;
+  padding:8px 14px;
+  background:#1b1b1b;
+  border-radius:999px;
   font-size:15px
 }
 
 .tron-logo{
   width:16px;
   height:16px;
-  display:block;
-  flex-shrink:0
-}
-
-.tron-logo,
-.tron-logo *{
-  fill:unset !important;
-  stroke:none !important;
-  opacity:1 !important;
-  filter:none !important
-}
-
-.amount-block{
-  margin-top:28px
-}
-
-.memo-block{
-  margin-top:40px
+  display:block
 }
 
 .info{
@@ -126,7 +113,8 @@ label{
   align-items:center;
   justify-content:center;
   font-size:13px;
-  font-weight:700
+  font-weight:700;
+  flex-shrink:0
 }
 
 .next{
@@ -135,8 +123,8 @@ label{
   right:16px;
   bottom:16px;
   height:56px;
-  border-radius:999px;
   border:none;
+  border-radius:999px;
   background:linear-gradient(180deg,#2f7a4f,#256644);
   color:#0b1f14;
   font-size:18px;
