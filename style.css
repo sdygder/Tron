@@ -16,21 +16,24 @@ body {
 .header {
   height: 56px;
   display: grid;
-  grid-template-columns: 40px 1fr 40px;
+  grid-template-columns: 48px 1fr 48px;
   align-items: center;
   margin-bottom: 12px;
 }
 
-.back {
+.header-left {
   font-size: 22px;
   justify-self: start;
 }
 
-h1 {
+.header-title {
+  justify-self: center;
   font-size: 18px;
   font-weight: 600;
-  margin: 0;
-  justify-self: center;
+}
+
+.header-right {
+  width: 48px;
 }
 
 label {
