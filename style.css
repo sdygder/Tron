@@ -92,12 +92,19 @@ label{
   height:18px
 }
 
+.tron-logo path{
+  fill:none;
+  stroke:#ffffff;
+  stroke-width:14;
+  stroke-linejoin:round
+}
+
 .amount-block{
-  margin-bottom:28px
+  margin-bottom:36px
 }
 
 .memo-block{
-  margin-top:28px
+  margin-top:36px
 }
 
 .info{
