@@ -127,11 +127,12 @@ label {
 .back-icon {
   width: 22px;
   height: 22px;
+  fill: none !important;
   stroke: #ffffff;
-  stroke-width: 2;
-  fill: none;
+  stroke-width: 2.2;
   stroke-linecap: round;
   stroke-linejoin: round;
+  display: block;
 }
 
 .info {
