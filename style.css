@@ -138,5 +138,6 @@ label{
   background:#1aff7c;
   color:#0b1f14;
   font-size:18px;
-  font-weight:600
+  font-weight:600;
+  box-shadow:0 0 18px rgba(26,255,124,.35);
 }
