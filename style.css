@@ -25,6 +25,7 @@ label{
 }
 
 .input-box{
+  position: relative;
   height:52px;
   background:#1a1a1a;
   border:1px solid #2a2a2a;
