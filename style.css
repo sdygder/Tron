@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 body {
@@ -10,46 +10,46 @@ body {
 }
 
 .page {
-  padding: 20px;
+  padding: 16px;
 }
 
 .header {
-  display: flex;
+  height: 56px;
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .back {
   font-size: 22px;
+  justify-self: start;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   margin: 0;
+  justify-self: center;
 }
 
 label {
-  color: #8c8c8c;
-  font-size: 14px;
-}
-
-.mt {
-  margin-top: 22px;
   display: block;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #8a8a8a;
 }
 
 .input-box {
-  margin-top: 8px;
-  height: 56px;
-  background: #1c1c1c;
-  border: 2.5px solid #2f2f2f;
-  border-radius: 16px;
-  padding: 0 16px;
+  height: 52px;
+  background: #1a1a1a;
+  border: 1.5px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 0 14px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   overflow: hidden;
 }
 
@@ -68,29 +68,26 @@ label {
 }
 
 .input-box input::placeholder {
-  color: #9f9f9f;
+  color: #9a9a9a;
 }
 
 .right {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   flex-shrink: 0;
-  min-width: 64px;
-  justify-content: flex-end;
 }
 
 .accent,
 .max {
   color: #1aff7c;
   font-weight: 600;
-  position: relative;
-  top: 1px;
+  font-size: 15px;
 }
 
 .right svg {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   stroke: #1aff7c;
   fill: none;
   stroke-width: 2;
@@ -99,13 +96,14 @@ label {
 }
 
 .network-pill {
-  margin-top: 8px;
-  background: #202020;
-  padding: 8px 12px;
+  margin-top: 6px;
+  background: #1a1a1a;
   border-radius: 999px;
+  padding: 8px 12px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  font-size: 15px;
 }
 
 .tron-logo {
@@ -118,28 +116,28 @@ label {
 }
 
 .info {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: #1aff7c;
   color: #000000;
+  font-size: 13px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: 14px;
 }
 
 .next {
   position: fixed;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  height: 56px;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  height: 54px;
   border-radius: 999px;
   border: none;
-  background: #245f3f;
+  background: #2b6f46;
   color: #0b1f14;
   font-size: 18px;
-  opacity: 0.45;
+  font-weight: 600;
 }
