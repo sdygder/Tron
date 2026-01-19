@@ -1,22 +1,19 @@
-:root {
-  --bg: #181818;
-  --box: #1f1f1f;
-  --grey: #9a9a9a;
-  --border-grey: #3a3a3a;
-  --white: #ffffff;
-  --green: #1aff7c;
-}
-
-* {
-  box-sizing: border-box;
-  font-family: Inter, system-ui, -apple-system, sans-serif;
-}
-
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--white);
-  min-height: 100vh;
+  background: #181818;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #ffffff;
+}
+
+.page {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
 .back {
@@ -28,12 +25,8 @@ h1 {
   margin: 0;
 }
 
-.container {
-  padding: 15px;
-}
-
 label {
-  color: var(--grey);
+  color: #9a9a9a;
   font-size: 14px;
 }
 
@@ -45,94 +38,82 @@ label {
 .input-box {
   margin-top: 8px;
   height: 56px;
-  background: var(--box);
+  background: #1f1f1f;
+  border: 2px solid #3a3a3a;
   border-radius: 16px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 16px;
   display: flex;
   align-items: center;
   gap: 12px;
-  border: 2px solid var(--border-grey);
-  overflow: hidden;
-  transition: border-color 0.15s ease;
 }
 
-.input-box.focused {
-  border-color: var(--green);
+.input-box:focus-within {
+  border-color: #1aff7c;
 }
 
 .input-box input {
   flex: 1;
-  min-width: 0;
-  height: 100%;
   background: transparent;
   border: none;
   outline: none;
+  color: #ffffff;
   font-size: 16px;
-  font-weight: 500;
-  color: var(--white);
 }
 
 .input-box input::placeholder {
-  color: var(--grey);
+  color: #9a9a9a;
 }
 
-.actions {
+.right {
   display: flex;
   align-items: center;
   gap: 12px;
-  flex-shrink: 0;
 }
 
-.paste {
-  color: var(--green);
-  font-weight: 500;
+.accent,
+.max {
+  color: #1aff7c;
+  font-weight: 600;
 }
 
 svg {
   width: 22px;
   height: 22px;
+  stroke: #1aff7c;
   fill: none;
-  stroke: var(--green);
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.pill {
+.network-pill {
   margin-top: 8px;
-  background: var(--box);
-  border-radius: 999px;
+  background: #1f1f1f;
   padding: 10px 14px;
+  border-radius: 999px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 14px;
 }
 
-.tron {
+.tron-logo {
   width: 18px;
   height: 18px;
-  fill: #ff0000;
-  stroke: none;
 }
 
-.usdt {
-  color: var(--grey);
-  font-weight: 500;
+.info {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #1aff7c;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
 }
 
-.max {
-  color: var(--green);
-  font-weight: 500;
-}
-
-.price {
-  margin-top: 10px;
-  color: #cfcfcf;
-}
-
-button {
+.next {
   position: fixed;
   left: 20px;
   right: 20px;
@@ -140,12 +121,7 @@ button {
   height: 56px;
   border-radius: 999px;
   border: none;
-  font-size: 18px;
   background: #2d7a4b;
   color: #0b1f14;
-  opacity: 0.4;
-}
-
-button.enabled {
-  opacity: 1;
+  font-size: 18px;
 }
