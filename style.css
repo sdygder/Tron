@@ -1,152 +1,128 @@
-* {
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+*{
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif
 }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  color: #ffffff;
+body{
+  margin:0;
+  min-height:100vh;
+  color:#fff;
   background:
-    radial-gradient(120% 80% at 50% 0%, #1b1b1b 0%, transparent 60%),
-    linear-gradient(180deg, #161616 0%, #121212 40%, #0e0e0e 100%);
+    radial-gradient(120% 80% at 50% 0%,#1b1b1b 0%,transparent 60%),
+    linear-gradient(180deg,#161616 0%,#121212 40%,#0e0e0e 100%)
 }
 
-.page {
-  padding: 16px;
-  min-height: 100%;
+.page{
+  padding:16px
 }
 
-.header {
-  height: 56px;
-  display: grid;
-  grid-template-columns: 48px 1fr 48px;
-  align-items: center;
-  margin-bottom: 12px;
+label{
+  display:block;
+  margin-top:18px;
+  margin-bottom:6px;
+  font-size:14px;
+  color:#8f8f8f
 }
 
-.header-left {
-  font-size: 22px;
+.input-box{
+  height:52px;
+  background:#1a1a1a;
+  border:1px solid #2a2a2a;
+  border-radius:12px;
+  padding:0 14px;
+  display:flex;
+  align-items:center;
+  gap:10px
 }
 
-.header-title {
-  font-size: 18px;
-  font-weight: 600;
-  justify-self: center;
+.input-box:focus-within{
+  border-color:#1aff7c
 }
 
-.header-right {
-  width: 48px;
+.input-box input{
+  flex:1;
+  background:transparent;
+  border:none;
+  outline:none;
+  color:#fff;
+  font-size:16px
 }
 
-label {
-  display: block;
-  margin-top: 18px;
-  margin-bottom: 6px;
-  font-size: 14px;
-  color: #8f8f8f;
+.input-box input::placeholder{
+  color:#9a9a9a
 }
 
-.input-box {
-  height: 52px;
-  background: linear-gradient(180deg, #1d1d1d, #191919);
-  border: 1.25px solid #2b2b2b;
-  border-radius: 12px;
-  padding: 0 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  overflow: hidden;
-}
-
-.input-box:focus-within {
-  border-color: #1aff7c;
-}
-
-.input-box input {
-  flex: 1;
-  min-width: 0;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #ffffff;
-  font-size: 16px;
-}
-
-.input-box input::placeholder {
-  color: #9a9a9a;
-}
-
-.right {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
+.right{
+  display:flex;
+  align-items:center;
+  gap:10px
 }
 
 .accent,
-.max {
-  color: #1aff7c;
-  font-weight: 600;
-  font-size: 15px;
+.max{
+  color:#1aff7c;
+  font-size:15px;
+  font-weight:600
 }
 
-.right svg {
-  width: 20px;
-  height: 20px;
-  stroke: #1aff7c;
-  fill: none;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.right svg{
+  width:20px;
+  height:20px;
+  stroke:#1aff7c;
+  fill:none;
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke-linejoin:round
 }
 
-.network-pill {
-  margin-top: 6px;
-  background: linear-gradient(180deg, #1f1f1f, #1a1a1a);
-  padding: 8px 12px;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 15px;
+.network-pill{
+  margin-top:6px;
+  height:36px;
+  padding:0 12px;
+  background:#1a1a1a;
+  border-radius:999px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:15px
 }
 
-.tron-logo {
-  width: 18px;
-  height: 18px;
+.tron-logo{
+  width:18px;
+  height:18px
 }
 
-.tron-logo * {
-  stroke: none !important;
+.amount-block{
+  margin-bottom:28px
 }
 
-.info {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #1aff7c;
-  color: #000000;
-  font-size: 13px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.memo-block{
+  margin-top:28px
 }
 
-.next {
-  position: fixed;
-  left: 16px;
-  right: 16px;
-  bottom: 16px;
-  height: 54px;
-  border-radius: 999px;
-  border: none;
-  background: linear-gradient(180deg, #2f7a4f, #256644);
-  color: #0b1f14;
-  font-size: 18px;
-  font-weight: 600;
+.info{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:#1aff7c;
+  color:#000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:13px;
+  font-weight:700
+}
+
+.next{
+  position:fixed;
+  left:16px;
+  right:16px;
+  bottom:16px;
+  height:54px;
+  border-radius:999px;
+  border:none;
+  background:linear-gradient(180deg,#2f7a4f,#256644);
+  color:#0b1f14;
+  font-size:18px;
+  font-weight:600
 }
