@@ -1,0 +1,112 @@
+:root {
+  --bg: #181818;
+  --box: #1f1f1f;
+  --text: #ffffff;
+  --label: #9a9a9a;
+  --border: #3a3a3a;
+  --accent: #1aff7c;
+  --button: #2d7a4b;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --box: #ffffff;
+    --text: #000000;
+    --label: #6b6b6b;
+    --border: #e5e5e5;
+    --accent: #1e40af;
+    --button: #1e40af;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  padding: 20px;
+}
+
+label {
+  color: var(--label);
+  font-size: 14px;
+}
+
+.mt {
+  margin-top: 22px;
+  display: block;
+}
+
+.input-box {
+  margin-top: 8px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--box);
+  border: 2px solid var(--border);
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.input-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.input-box input::placeholder {
+  color: var(--label);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--accent);
+  fill: none;
+  stroke-width: 2;
+}
+
+.accent {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.unit {
+  color: var(--label);
+}
+
+.value {
+  margin-top: 6px;
+  color: var(--label);
+}
+
+.next {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  height: 56px;
+  border-radius: 999px;
+  border: none;
+  background: var(--button);
+  color: white;
+  font-size: 18px;
+}
