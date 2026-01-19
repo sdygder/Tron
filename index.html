@@ -3,58 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Send USDT</title>
+  <title>Trust UI</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <div class="page">
+
   <label>Address or Domain Name</label>
   <div class="input-box">
     <input placeholder="Search or Enter">
     <div class="right">
       <span class="accent">Paste</span>
       <svg viewBox="0 0 24 24">
-        <rect x="9" y="9" width="13" height="13" rx="2"/>
-        <path d="M5 15V5a2 2 0 0 1 2-2h10"/>
+        <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+        <path d="M5 15V5a2 2 0 0 1 2-2h10"></path>
       </svg>
       <svg viewBox="0 0 24 24">
-        <path d="M4 7V4h3"/>
-        <path d="M17 4h3v3"/>
-        <path d="M20 17v3h-3"/>
-        <path d="M7 20H4v-3"/>
+        <path d="M4 7V4h3"></path>
+        <path d="M17 4h3v3"></path>
+        <path d="M20 17v3h-3"></path>
+        <path d="M7 20H4v-3"></path>
       </svg>
-    </div>
-  </div>
-  <label class="mt">Destination network</label>
-  <div class="network-pill">
-    <svg class="tron-logo" viewBox="0 0 64 64">
-      <circle cx="32" cy="32" r="32" fill="#FF3B3B"/>
-      <path fill="#fff" d="M18 14 46 22 36 50 18 14zm10 10 8 20 6-16-14-4z"/>
-    </svg>
-    <span>Tron ▾</span>
-  </div>
-  <label class="mt">Amount</label>
-  <div class="input-box">
-    <input placeholder="USDT Amount">
-    <span class="max">Max</span>
-  </div>
-  <label class="mt">Memo</label>
-  <div class="input-box">
-    <input>
-    <div class="right">
-      <svg viewBox="0 0 24 24">
-        <path d="M4 7V4h3"/>
-        <path d="M17 4h3v3"/>
-        <path d="M20 17v3h-3"/>
-        <path d="M7 20H4v-3"/>
-      </svg>
-      <span class="info">i</span>
     </div>
   </div>
 
-  <button class="next">Next</button>
+  <label>Destination network</label>
+  <div class="network-pill">
+    <svg class="tron-logo" viewBox="0 0 256 256">
+      <circle cx="128" cy="128" r="128" fill="#FF2E2E"/>
+      <path d="M62 52l132 24-66 128L62 52z" fill="none" stroke="#fff" stroke-width="14" stroke-linejoin="round"/>
+      <path d="M62 52l66 152" fill="none" stroke="#fff" stroke-width="14" stroke-linejoin="round"/>
+      <path d="M194 76L128 204" fill="none" stroke="#fff" stroke-width="14" stroke-linejoin="round"/>
+    </svg>
+    Tron ▾
+  </div>
+
+  <div class="amount-block">
+    <label>Amount</label>
+    <div class="input-box">
+      <input placeholder="USDT Amount">
+      <div class="right">
+        <span class="max">Max</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="memo-block">
+    <label>Memo</label>
+    <div class="input-box">
+      <input>
+      <div class="right">
+        <svg viewBox="0 0 24 24">
+          <path d="M4 7V4h3"></path>
+          <path d="M17 4h3v3"></path>
+          <path d="M20 17v3h-3"></path>
+          <path d="M7 20H4v-3"></path>
+        </svg>
+        <div class="info">i</div>
+      </div>
+    </div>
+  </div>
 
 </div>
+
+<button class="next">Next</button>
 
 </body>
 </html>
