@@ -25,15 +25,12 @@ label{
 }
 
 .input-box{
+  position:relative;
+  width:100%;
   height:52px;
   background:#1a1a1a;
   border:1px solid #2a2a2a;
   border-radius:12px;
-  padding:0 14px;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  overflow:hidden
 }
 
 .input-box:focus-within{
@@ -41,13 +38,14 @@ label{
 }
 
 .input-box input{
-  flex:1 1 auto;
-  min-width:0;
+  width:100%;
+  height:100%;
   background:transparent;
   border:none;
   outline:none;
   color:#fff;
-  font-size:16px
+  font-size:16px;
+  padding:0 110px 0 14px
 }
 
 .input-box input::placeholder{
@@ -55,11 +53,13 @@ label{
 }
 
 .right{
+  position:absolute;
+  right:14px;
+  top:50%;
+  transform:translateY(-50%);
   display:flex;
   align-items:center;
-  gap:10px;
-  flex-shrink:0;
-  max-width:40%;
+  gap:10px
 }
 
 .accent,
@@ -77,8 +77,7 @@ label{
   fill:none;
   stroke-width:2;
   stroke-linecap:round;
-  stroke-linejoin:round;
-  flex-shrink:0
+  stroke-linejoin:round
 }
 
 .network-pill{
@@ -124,8 +123,7 @@ label{
   align-items:center;
   justify-content:center;
   font-size:13px;
-  font-weight:700;
-  flex-shrink:0
+  font-weight:700
 }
 
 .next{
