@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Send USDT</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trust UI</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <button class="back-btn" aria-label="Go Back">
-                <i class="fas fa-arrow-left"></i>
-            </button>
-            <h1 class="title">Send USDT</h1>
-            <div></div>
-        </header>
 
-        <form class="form">
+<div class="page">
 
-            <label class="label" for="address">Address or Domain Name</label>
-            <div class="input-group address-group">
-                <input
-                    id="address"
-                    type="text"
-                    placeholder="Search or Enter"
-                    autocomplete="off"
-                />
-                <div class="address-actions">
-                    <button type="button" class="paste-btn">Paste</button>
-                    <button type="button" class="icon-btn" aria-label="Paste from clipboard"><i class="fas fa-clipboard-list"></i></button>
-                    <button type="button" class="icon-btn" aria-label="Scan QR Code"><i class="fas fa-qrcode"></i></button>
-                </div>
-            </div>
-
-            <label class="label" for="network">Destination network</label>
-            <div class="dropdown-wrapper">
-                <button type="button" class="dropdown">
-                    <span class="network-icon">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Tron-logo.png" alt="Tron" />
-                    </span>
-                    <span class="network-name">Tron</span>
-                    <i class="fas fa-chevron-down dropdown-arrow"></i>
-                </button>
-            </div>
-
-            <label class="label" for="amount">Amount</label>
-            <div class="input-group amount-group">
-                <input id="amount" type="text" placeholder="USDT Amount" autocomplete="off" />
-                <button type="button" class="max-btn">Max</button>
-            </div>
-
-            <label class="label" for="memo">Memo</label>
-            <div class="input-group memo-group">
-                <input id="memo" type="text" autocomplete="off" />
-                <div class="memo-actions">
-                    <button type="button" class="icon-btn" aria-label="Scan Memo"><i class="fas fa-qrcode"></i></button>
-                    <button type="button" class="info-btn" aria-label="Memo Info"><i class="fas fa-info-circle"></i></button>
-                </div>
-            </div>
-
-            <button type="submit" class="btn-submit">Next</button>
-        </form>
+  <label>Address or Domain Name</label>
+  <div class="input-box">
+    <input placeholder="Search or Enter">
+    <div class="right">
+      <span class="accent">Paste</span>
+      <svg viewBox="0 0 24 24">
+        <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+        <path d="M5 15V5a2 2 0 0 1 2-2h10"></path>
+      </svg>
+      <svg viewBox="0 0 24 24">
+        <path d="M4 7V4h3"></path>
+        <path d="M17 4h3v3"></path>
+        <path d="M20 17v3h-3"></path>
+        <path d="M7 20H4v-3"></path>
+      </svg>
     </div>
+  </div>
+
+  <label>Destination network</label>
+  <div class="network-pill">
+    <svg class="tron-logo" viewBox="0 0 256 256">
+      <circle cx="128" cy="128" r="128" fill="#FF2E2E"/>
+      <path d="M62 52l132 24-66 128L62 52z"/>
+      <path d="M62 52l66 152"/>
+      <path d="M194 76L128 204"/>
+    </svg>
+    Tron ▾
+  </div>
+
+  <div class="amount-block">
+    <label>Amount</label>
+    <div class="input-box">
+      <input placeholder="USDT Amount">
+      <div class="right">
+        <span class="max">Max</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="memo-block">
+    <label>Memo</label>
+    <div class="input-box">
+      <input>
+      <div class="right">
+        <svg viewBox="0 0 24 24">
+          <path d="M4 7V4h3"></path>
+          <path d="M17 4h3v3"></path>
+          <path d="M20 17v3h-3"></path>
+          <path d="M7 20H4v-3"></path>
+        </svg>
+        <div class="info">i</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<button class="next">Next</button>
+
 </body>
 </html>
