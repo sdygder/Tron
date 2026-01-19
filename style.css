@@ -96,18 +96,16 @@ label{
 }
 
 .tron-logo{
-  width:16px;
-  height:16px;
-  display:block;
+  width:18px;
+  height:18px;
   flex-shrink:0
 }
 
-.tron-logo,
-.tron-logo *{
-  fill:unset !important;
-  stroke:none !important;
-  opacity:1 !important;
-  filter:none !important
+.tron-logo path{
+  fill:none;
+  stroke:#ffffff;
+  stroke-width:14;
+  stroke-linejoin:round
 }
 
 .amount-block{
