@@ -4,22 +4,9 @@
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  padding: 20px;
-}
-
-body {
   background: #ffffff;
   color: #1f2937;
-}
-
-.input-box input {
-  border: 1.5px solid #e5e7eb;
-  background: #ffffff;
-}
-
-.input-box input:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.35);
+  padding: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,17 +14,7 @@ body {
     background: #0f0f0f;
     color: #e5e7eb;
   }
-
-  .input-box input {
-    border-color: #2a2a2a;
-    background: #1a1a1a;
-  }
-  .input-box input:focus {
-    border-color: #22c55e;
-    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.35);
-  }
 }
-
 
 .container {
   max-width: 420px;
@@ -59,12 +36,33 @@ body {
   width: 100%;
   height: 56px;
   border-radius: 12px;
+  border: 1.5px solid #e5e7eb;
   padding: 0 140px 0 16px;
   font-size: 16px;
+  background: #ffffff;
+  color: #1f2937;
   outline: none;
 }
 
-.right-icons {
+.input-box input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.35);
+}
+
+@media (prefers-color-scheme: dark) {
+  .input-box input {
+    background: #1a1a1a;
+    border-color: #2a2a2a;
+    color: #e5e7eb;
+  }
+
+  .input-box input:focus {
+    border-color: #22c55e;
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.35);
+  }
+}
+
+.icons {
   position: absolute;
   right: 14px;
   top: 50%;
@@ -74,10 +72,14 @@ body {
   gap: 14px;
 }
 
-.text-btn {
+.text {
   color: #2563eb;
   font-weight: 600;
-  cursor: pointer;
+}
+
+.unit {
+  color: #6b7280;
+  font-weight: 600;
 }
 
 .icon {
@@ -105,7 +107,12 @@ body {
   fill: #ffffff;
 }
 
-.next-btn {
+.rate {
+  margin: 6px 0 10px;
+  color: #6b7280;
+}
+
+.next {
   position: fixed;
   left: 20px;
   right: 20px;
@@ -113,7 +120,7 @@ body {
   height: 58px;
   border-radius: 30px;
   border: none;
-  background: #2563eb;
+  background: #1e40af;
   color: #ffffff;
   font-size: 18px;
   font-weight: 600;
